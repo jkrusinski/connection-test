@@ -24,4 +24,4 @@ setInterval(() => {
     .post(`${HOST}/${ID}`)
     .then(() => append(`${getTime()} - Connected`))
     .catch(() => append(`${getTime()} - OFFLINE`));
-}, 1000);
+}, 1000 * 60);
